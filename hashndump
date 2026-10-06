@@ -28,3 +28,7 @@
     #Keep integrity of evidence while making copies in a separate folder 'collected' i.e. evidence collected.
 
     shasum -a 256 ./auth.log ./wtmp > hashcheck.txt
+
+    grep -inE 'Failed password|Invalid user|Accepted password|useradd|groupadd|COMMAND=' ./collected/auth.log > findings.txt
+
+    
