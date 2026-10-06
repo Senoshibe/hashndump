@@ -1,2 +1,2 @@
 # hashndump
-Evidence hashing, verification, and brute force detection for offline Linux DFIR folders
+Evidence hashing, and parsing/dumping offline Linux artefacts from compromised devices
