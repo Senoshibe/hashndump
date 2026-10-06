@@ -3,11 +3,13 @@
 checkForPython() {
     local py dev
     py=$(whence -p python3)
-    if [[ $py = /usr/bin/python3 ]]; then
-        echo true
+    if [[ $py = /Library/Developer/CommandLineTools/usr/bin/python3 ]]; then
+        return 0
     #Check if python3 pathname /usr/bin/python3 which is default location for macOS. If it matches then print 'true'. Placeholder for ending if statement.
     else 
-        echo false
+        echo 'Install Python For hashndump tool to work! Install Python and Try Again!'
+        sleep 5
+        xcode-select --install
     #'Otherwise print 'false''. Placeholder for installing python on device.
     fi
 }
