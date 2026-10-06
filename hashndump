@@ -15,3 +15,16 @@
 
     cd 'Digital Forensic Evidence/MangoBleed' || exit 1
     #get into the digital forensic evidence directory
+
+    if [[ -f hashcheck.txt ]]; then
+        exit 1
+    #checks if there's already a txt file with source evidence and corresponding hash. If there is, exit.
+    fi
+    checkForPython || exit 1
+    #make sure analyst's device has python in order to run the utmp.py tool.
+
+    mkdir collected
+    cp -p auth.log wtmp collected/
+    #Keep integrity of evidence while making copies in a separate folder 'collected' i.e. evidence collected.
+
+    shasum -a 256 ./auth.log ./wtmp > hashcheck.txt
