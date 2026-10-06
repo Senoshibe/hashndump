@@ -1,15 +1,18 @@
-#!/usr/bin/env zsh
+    #!/usr/bin/env zsh
 
-checkForPython() {
-    local py dev
-    py=$(whence -p python3)
-    if [[ $py = /Library/Developer/CommandLineTools/usr/bin/python3 ]]; then
-        return 0
-    #Check if python3 pathname /usr/bin/python3 which is default location for macOS. If it matches then print 'true'. Placeholder for ending if statement.
-    else 
-        echo 'Install Python For hashndump tool to work! Install Python and Try Again!'
-        sleep 5
-        xcode-select --install
-    #'Otherwise print 'false''. Placeholder for installing python on device.
-    fi
-}
+    checkForPython() {
+        if [[ -x /Library/Developer/CommandLineTools/usr/bin/python3 ]]; then
+            return 0
+        #Check if python3 path exists, and if it exists, function succeeds
+        else 
+            echo 'Install Python For hashndump tool to work! Install Python and Try Again!'
+            sleep 3
+            xcode-select --install
+            return 1
+        #force install of macOS 'CommandLineTools' which includes Python. Fail function to halt script.
+        fi
+    }
+
+    checkForPython
+
+    
