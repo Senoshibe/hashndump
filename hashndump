@@ -13,6 +13,5 @@
         fi
     }
 
-    checkForPython
-
-    
+    cd 'Digital Forensic Evidence/MangoBleed' || exit 1
+    #get into the digital forensic evidence directory
