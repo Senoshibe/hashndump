@@ -1,1 +1,12 @@
 #!/usr/bin/env zsh
+
+checkForPython() [
+    local py dev
+    py=$(whence -p python3)
+    if [[ $py != /usr/bin/python3 ]]; then
+        echo true
+    #Check if python3 pathname /usr/bin/python3 which is default location for macOS. If it matches then print 'true'. Placeholder for ending if statement.
+    fi 
+        echo false
+    #'Otherwise print 'false''. Placeholder for installing python on device.
+]
