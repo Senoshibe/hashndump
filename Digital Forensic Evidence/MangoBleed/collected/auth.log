@@ -1,0 +1,239 @@
+2025-12-29T05:04:11.115806+00:00 ip-172-31-38-170 useradd[571]: new group: name=ubuntu, GID=1000
+2025-12-29T05:04:11.115810+00:00 ip-172-31-38-170 useradd[571]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+2025-12-29T05:04:11.115814+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'adm'
+2025-12-29T05:04:11.115818+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'cdrom'
+2025-12-29T05:04:11.115821+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'sudo'
+2025-12-29T05:04:11.115825+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'dip'
+2025-12-29T05:04:11.115829+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'lxd'
+2025-12-29T05:04:11.115833+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'adm'
+2025-12-29T05:04:11.115836+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'cdrom'
+2025-12-29T05:04:11.115842+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'sudo'
+2025-12-29T05:04:11.115845+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'dip'
+2025-12-29T05:04:11.115849+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'lxd'
+2025-12-29T05:04:11.115854+00:00 ip-172-31-38-170 passwd[579]: password for 'ubuntu' changed by 'root'
+2025-12-29T05:04:11.116360+00:00 ip-172-31-38-170 systemd-logind[678]: Watching system buttons on /dev/input/event0 (Power Button)
+2025-12-29T05:04:11.116368+00:00 ip-172-31-38-170 systemd-logind[678]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2025-12-29T05:04:11.116372+00:00 ip-172-31-38-170 systemd-logind[678]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2025-12-29T05:04:11.116376+00:00 ip-172-31-38-170 systemd-logind[678]: New seat seat0.
+2025-12-29T05:04:11.025483+00:00 ip-172-31-38-170 polkitd[611]: Loading rules from directory /etc/polkit-1/rules.d
+2025-12-29T05:04:11.026255+00:00 ip-172-31-38-170 polkitd[611]: Loading rules from directory /usr/share/polkit-1/rules.d
+2025-12-29T05:04:11.072501+00:00 ip-172-31-38-170 polkitd[611]: Finished loading, compiling and executing 6 rules
+2025-12-29T05:04:11.073183+00:00 ip-172-31-38-170 polkitd[611]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2025-12-29T05:04:52.429239+00:00 ip-172-31-38-170 sshd[1039]: Server listening on 0.0.0.0 port 22.
+2025-12-29T05:04:52.429452+00:00 ip-172-31-38-170 sshd[1039]: Server listening on :: port 22.
+2025-12-29T05:04:54.684613+00:00 ip-172-31-38-170 sshd[1040]: Connection reset by authenticating user ubuntu 119.73.124.129 port 23947 [preauth]
+2025-12-29T05:05:01.028401+00:00 ip-172-31-38-170 CRON[1042]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:05:01.032829+00:00 ip-172-31-38-170 CRON[1042]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:06:20.503136+00:00 ip-172-31-38-170 sshd[1045]: Connection closed by 111.36.147.188 port 53492
+2025-12-29T05:06:21.950910+00:00 ip-172-31-38-170 sshd[1046]: Invalid user a from 111.36.147.188 port 53504
+2025-12-29T05:06:22.236147+00:00 ip-172-31-38-170 sshd[1046]: Connection closed by invalid user a 111.36.147.188 port 53504 [preauth]
+2025-12-29T05:07:41.181072+00:00 ip-172-31-38-170 sshd[1048]: Accepted publickey for ubuntu from 119.73.124.129 port 24002 ssh2: RSA SHA256:nCp8ZKrJp4EboRuKpyUO3IeMgrBtqtP0jKFl/TgG2R4
+2025-12-29T05:07:41.182973+00:00 ip-172-31-38-170 sshd[1048]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-12-29T05:07:41.208465+00:00 ip-172-31-38-170 systemd-logind[678]: New session 2 of user ubuntu.
+2025-12-29T05:07:41.226504+00:00 ip-172-31-38-170 (systemd): pam_unix(systemd-user:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2025-12-29T05:07:45.300046+00:00 ip-172-31-38-170 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/su
+2025-12-29T05:07:45.300799+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=1000)
+2025-12-29T05:07:45.307687+00:00 ip-172-31-38-170 su[1209]: (to root) root on pts/1
+2025-12-29T05:07:45.308068+00:00 ip-172-31-38-170 su[1209]: pam_unix(su:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:09:28.734550+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/gpg --dearmor -o /usr/share/keyrings/mongodb-server-8.0.gpg
+2025-12-29T05:09:28.735482+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:09:30.157821+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:09:30.166819+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+2025-12-29T05:09:30.167627+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:09:30.170227+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:09:30.178028+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+2025-12-29T05:09:30.178567+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:09:50.137847+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:11:07.085777+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install -y mongodb-org=8.0.16 mongodb-org-server=8.0.16 mongodb-org-shell=8.0.16 mongodb-org-mongos=8.0.16 mongodb-org-tools=8.0.16
+2025-12-29T05:11:07.086307+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:11:32.546157+00:00 ip-172-31-38-170 useradd[1753]: new user: name=mongodb, UID=111, GID=65534, home=/nonexistent, shell=/usr/sbin/nologin, from=/dev/pts/3
+2025-12-29T05:11:32.638240+00:00 ip-172-31-38-170 groupadd[1764]: group added to /etc/group: name=mongodb, GID=113
+2025-12-29T05:11:32.643207+00:00 ip-172-31-38-170 groupadd[1764]: group added to /etc/gshadow: name=mongodb
+2025-12-29T05:11:32.644821+00:00 ip-172-31-38-170 groupadd[1764]: new group: name=mongodb, GID=113
+2025-12-29T05:11:32.714841+00:00 ip-172-31-38-170 usermod[1772]: add 'mongodb' to group 'mongodb'
+2025-12-29T05:11:32.714961+00:00 ip-172-31-38-170 usermod[1772]: add 'mongodb' to shadow group 'mongodb'
+2025-12-29T05:11:36.537027+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:11:47.075678+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl enable --now mongod
+2025-12-29T05:11:47.076505+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:11:47.381686+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:11:47.390413+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl status mongod --no-pager
+2025-12-29T05:11:47.391638+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:11:47.404174+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:15:01.038511+00:00 ip-172-31-38-170 CRON[1992]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:15:01.041681+00:00 ip-172-31-38-170 CRON[1992]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:16:57.992577+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart mongod
+2025-12-29T05:16:57.993145+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:16:58.049937+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:16:58.059130+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl status mongod --no-pager
+2025-12-29T05:16:58.059968+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:16:58.070053+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:17:01.045517+00:00 ip-172-31-38-170 CRON[2067]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:17:01.048532+00:00 ip-172-31-38-170 CRON[2067]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:17:25.046776+00:00 ip-172-31-38-170 groupadd[2082]: group added to /etc/group: name=mongoadmin, GID=1001
+2025-12-29T05:17:25.052150+00:00 ip-172-31-38-170 groupadd[2082]: group added to /etc/gshadow: name=mongoadmin
+2025-12-29T05:17:25.053874+00:00 ip-172-31-38-170 groupadd[2082]: new group: name=mongoadmin, GID=1001
+2025-12-29T05:17:25.077965+00:00 ip-172-31-38-170 useradd[2089]: new user: name=mongoadmin, UID=1001, GID=1001, home=/home/mongoadmin, shell=/bin/bash, from=/dev/pts/1
+2025-12-29T05:17:36.056686+00:00 ip-172-31-38-170 passwd[2102]: pam_unix(passwd:chauthtok): password changed for mongoadmin
+2025-12-29T05:17:38.499388+00:00 ip-172-31-38-170 chfn[2103]: changed user 'mongoadmin' information
+2025-12-29T05:17:40.353452+00:00 ip-172-31-38-170 gpasswd[2111]: members of group users set by root to mongoadmin
+2025-12-29T05:17:57.557759+00:00 ip-172-31-38-170 usermod[2117]: add 'mongoadmin' to group 'sudo'
+2025-12-29T05:17:57.557922+00:00 ip-172-31-38-170 usermod[2117]: add 'mongoadmin' to shadow group 'sudo'
+2025-12-29T05:21:01.379192+00:00 ip-172-31-38-170 passwd[2141]: pam_unix(passwd:chauthtok): password changed for root
+2025-12-29T05:21:06.708154+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/sbin/sshd -t
+2025-12-29T05:21:06.708670+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:21:06.720412+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:21:06.729843+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2025-12-29T05:21:06.730428+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:21:06.739529+00:00 ip-172-31-38-170 sshd[1039]: Received signal 15; terminating.
+2025-12-29T05:21:06.775368+00:00 ip-172-31-38-170 sshd[2152]: Server listening on 0.0.0.0 port 22.
+2025-12-29T05:21:06.775524+00:00 ip-172-31-38-170 sshd[2152]: Server listening on :: port 22.
+2025-12-29T05:21:06.778121+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:21:06.787763+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+2025-12-29T05:21:06.788343+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by ubuntu(uid=0)
+2025-12-29T05:21:06.805244+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:22:30.684570+00:00 ip-172-31-38-170 su[1209]: pam_unix(su:session): session closed for user root
+2025-12-29T05:22:30.685812+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:session): session closed for user root
+2025-12-29T05:22:33.258198+00:00 ip-172-31-38-170 sshd[1158]: Received disconnect from 119.73.124.129 port 24002:11: disconnected by user
+2025-12-29T05:22:33.258391+00:00 ip-172-31-38-170 sshd[1158]: Disconnected from user ubuntu 119.73.124.129 port 24002
+2025-12-29T05:22:33.259325+00:00 ip-172-31-38-170 sshd[1048]: pam_unix(sshd:session): session closed for user ubuntu
+2025-12-29T05:22:33.263047+00:00 ip-172-31-38-170 systemd-logind[678]: Session 2 logged out. Waiting for processes to exit.
+2025-12-29T05:22:33.263960+00:00 ip-172-31-38-170 systemd-logind[678]: Removed session 2.
+2025-12-29T05:22:43.319224+00:00 ip-172-31-38-170 (sd-pam): pam_unix(systemd-user:session): session closed for user ubuntu
+2025-12-29T05:25:01.053898+00:00 ip-172-31-38-170 CRON[2170]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:25:01.056375+00:00 ip-172-31-38-170 CRON[2170]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:35:01.062278+00:00 ip-172-31-38-170 CRON[39810]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:35:01.065344+00:00 ip-172-31-38-170 CRON[39810]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:39:18.864074+00:00 ip-172-31-38-170 sshd[39814]: Received disconnect from 65.0.76.43 port 54962:11: Bye Bye [preauth]
+2025-12-29T05:39:18.866641+00:00 ip-172-31-38-170 sshd[39814]: Disconnected from authenticating user mongoadmin 65.0.76.43 port 54962 [preauth]
+2025-12-29T05:39:19.112894+00:00 ip-172-31-38-170 sshd[2152]: error: beginning MaxStartups throttling
+2025-12-29T05:39:19.113009+00:00 ip-172-31-38-170 sshd[2152]: drop connection #10 from [65.0.76.43]:55068 on [172.31.38.170]:22 past MaxStartups
+2025-12-29T05:39:19.381375+00:00 ip-172-31-38-170 sshd[39844]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.478221+00:00 ip-172-31-38-170 sshd[39845]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.545976+00:00 ip-172-31-38-170 sshd[39846]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.554759+00:00 ip-172-31-38-170 sshd[39847]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.554993+00:00 ip-172-31-38-170 sshd[39848]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.555198+00:00 ip-172-31-38-170 sshd[39851]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.558909+00:00 ip-172-31-38-170 sshd[39854]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.564686+00:00 ip-172-31-38-170 sshd[39853]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.564934+00:00 ip-172-31-38-170 sshd[39855]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.565129+00:00 ip-172-31-38-170 sshd[39850]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.566958+00:00 ip-172-31-38-170 sshd[39856]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.567215+00:00 ip-172-31-38-170 sshd[39852]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.567871+00:00 ip-172-31-38-170 sshd[39849]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:19.572079+00:00 ip-172-31-38-170 sshd[39857]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:21.697983+00:00 ip-172-31-38-170 sshd[39816]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.752018+00:00 ip-172-31-38-170 sshd[39858]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:21.797661+00:00 ip-172-31-38-170 sshd[39818]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.851009+00:00 ip-172-31-38-170 sshd[39859]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:21.856191+00:00 ip-172-31-38-170 sshd[39819]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.870123+00:00 ip-172-31-38-170 sshd[39820]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.871087+00:00 ip-172-31-38-170 sshd[39824]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.871332+00:00 ip-172-31-38-170 sshd[39821]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.878545+00:00 ip-172-31-38-170 sshd[39823]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.879041+00:00 ip-172-31-38-170 sshd[39825]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.880199+00:00 ip-172-31-38-170 sshd[39827]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.880996+00:00 ip-172-31-38-170 sshd[39817]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.883517+00:00 ip-172-31-38-170 sshd[39830]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.883794+00:00 ip-172-31-38-170 sshd[39826]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.884016+00:00 ip-172-31-38-170 sshd[39822]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:21.890635+00:00 ip-172-31-38-170 sshd[39829]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:22.030041+00:00 ip-172-31-38-170 sshd[39860]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.146020+00:00 ip-172-31-38-170 sshd[39861]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.158046+00:00 ip-172-31-38-170 sshd[39871]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.161929+00:00 ip-172-31-38-170 sshd[39862]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.162153+00:00 ip-172-31-38-170 sshd[39869]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.162355+00:00 ip-172-31-38-170 sshd[39863]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.166407+00:00 ip-172-31-38-170 sshd[39865]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.166627+00:00 ip-172-31-38-170 sshd[39867]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.166873+00:00 ip-172-31-38-170 sshd[39866]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.167075+00:00 ip-172-31-38-170 sshd[39864]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.167285+00:00 ip-172-31-38-170 sshd[39868]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:22.173507+00:00 ip-172-31-38-170 sshd[39870]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:23.676920+00:00 ip-172-31-38-170 sshd[39816]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:23.731304+00:00 ip-172-31-38-170 sshd[39872]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:23.776120+00:00 ip-172-31-38-170 sshd[39818]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:23.829259+00:00 ip-172-31-38-170 sshd[39873]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:23.951868+00:00 ip-172-31-38-170 sshd[39819]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.005606+00:00 ip-172-31-38-170 sshd[39874]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.067192+00:00 ip-172-31-38-170 sshd[39824]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.081971+00:00 ip-172-31-38-170 sshd[39822]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.085379+00:00 ip-172-31-38-170 sshd[39821]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.086370+00:00 ip-172-31-38-170 sshd[39820]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.088632+00:00 ip-172-31-38-170 sshd[39817]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.088863+00:00 ip-172-31-38-170 sshd[39825]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.091298+00:00 ip-172-31-38-170 sshd[39829]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.092043+00:00 ip-172-31-38-170 sshd[39826]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.092755+00:00 ip-172-31-38-170 sshd[39823]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.097350+00:00 ip-172-31-38-170 sshd[39830]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.099331+00:00 ip-172-31-38-170 sshd[39827]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:24.108758+00:00 ip-172-31-38-170 sshd[39830]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55126 [preauth]
+2025-12-29T05:39:24.108846+00:00 ip-172-31-38-170 sshd[39827]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55096 [preauth]
+2025-12-29T05:39:24.108889+00:00 ip-172-31-38-170 sshd[39826]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55090 [preauth]
+2025-12-29T05:39:24.210906+00:00 ip-172-31-38-170 sshd[39875]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.269457+00:00 ip-172-31-38-170 sshd[39878]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.273306+00:00 ip-172-31-38-170 sshd[39876]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.276756+00:00 ip-172-31-38-170 sshd[39825]: Accepted keyboard-interactive/pam for mongoadmin from 65.0.76.43 port 55056 ssh2
+2025-12-29T05:39:24.279681+00:00 ip-172-31-38-170 sshd[39882]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.280444+00:00 ip-172-31-38-170 sshd[39825]: pam_unix(sshd:session): session opened for user mongoadmin(uid=1001) by mongoadmin(uid=0)
+2025-12-29T05:39:24.286885+00:00 ip-172-31-38-170 sshd[39879]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.289290+00:00 ip-172-31-38-170 sshd[39881]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.289574+00:00 ip-172-31-38-170 sshd[39880]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=65.0.76.43  user=mongoadmin
+2025-12-29T05:39:24.290575+00:00 ip-172-31-38-170 systemd-logind[678]: New session 8 of user mongoadmin.
+2025-12-29T05:39:24.320958+00:00 ip-172-31-38-170 (systemd): pam_unix(systemd-user:session): session opened for user mongoadmin(uid=1001) by mongoadmin(uid=0)
+2025-12-29T05:39:24.861336+00:00 ip-172-31-38-170 sshd[39825]: pam_unix(sshd:session): session closed for user mongoadmin
+2025-12-29T05:39:24.865198+00:00 ip-172-31-38-170 systemd-logind[678]: Session 8 logged out. Waiting for processes to exit.
+2025-12-29T05:39:24.866157+00:00 ip-172-31-38-170 systemd-logind[678]: Removed session 8.
+2025-12-29T05:39:25.596404+00:00 ip-172-31-38-170 sshd[39816]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.598101+00:00 ip-172-31-38-170 sshd[39816]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 54976 [preauth]
+2025-12-29T05:39:25.694370+00:00 ip-172-31-38-170 sshd[39818]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.695961+00:00 ip-172-31-38-170 sshd[39818]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 54988 [preauth]
+2025-12-29T05:39:25.870560+00:00 ip-172-31-38-170 sshd[39819]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.872303+00:00 ip-172-31-38-170 sshd[39819]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55002 [preauth]
+2025-12-29T05:39:25.880047+00:00 ip-172-31-38-170 sshd[39824]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.881891+00:00 ip-172-31-38-170 sshd[39824]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55040 [preauth]
+2025-12-29T05:39:25.938496+00:00 ip-172-31-38-170 sshd[39829]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.940446+00:00 ip-172-31-38-170 sshd[39829]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55112 [preauth]
+2025-12-29T05:39:25.941340+00:00 ip-172-31-38-170 sshd[39822]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.943193+00:00 ip-172-31-38-170 sshd[39822]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55018 [preauth]
+2025-12-29T05:39:25.949031+00:00 ip-172-31-38-170 sshd[39823]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.950631+00:00 ip-172-31-38-170 sshd[39823]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55034 [preauth]
+2025-12-29T05:39:25.955047+00:00 ip-172-31-38-170 sshd[39817]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.958028+00:00 ip-172-31-38-170 sshd[39820]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.959241+00:00 ip-172-31-38-170 sshd[39821]: error: PAM: Authentication failure for mongoadmin from 65.0.76.43
+2025-12-29T05:39:25.959329+00:00 ip-172-31-38-170 sshd[39817]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 54978 [preauth]
+2025-12-29T05:39:25.959975+00:00 ip-172-31-38-170 sshd[39820]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55006 [preauth]
+2025-12-29T05:39:25.960736+00:00 ip-172-31-38-170 sshd[39821]: Connection closed by authenticating user mongoadmin 65.0.76.43 port 55014 [preauth]
+2025-12-29T05:39:57.204407+00:00 ip-172-31-38-170 sshd[2152]: exited MaxStartups throttling after 00:00:38, 2 connections dropped
+2025-12-29T05:40:03.475659+00:00 ip-172-31-38-170 sshd[39962]: Accepted keyboard-interactive/pam for mongoadmin from 65.0.76.43 port 46062 ssh2
+2025-12-29T05:40:03.477802+00:00 ip-172-31-38-170 sshd[39962]: pam_unix(sshd:session): session opened for user mongoadmin(uid=1001) by mongoadmin(uid=0)
+2025-12-29T05:40:03.486034+00:00 ip-172-31-38-170 systemd-logind[678]: New session 10 of user mongoadmin.
+2025-12-29T05:40:03.515831+00:00 ip-172-31-38-170 (systemd): pam_unix(systemd-user:session): session opened for user mongoadmin(uid=1001) by mongoadmin(uid=0)
+2025-12-29T05:42:03.072922+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:auth): authentication failure; logname=mongoadmin uid=1001 euid=0 tty=/dev/pts/0 ruser=mongoadmin rhost=  user=mongoadmin
+2025-12-29T05:42:04.017733+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:auth): conversation failed
+2025-12-29T05:42:04.017920+00:00 ip-172-31-38-170 sudo: pam_unix(sudo:auth): auth could not identify password for [mongoadmin]
+2025-12-29T05:42:04.018057+00:00 ip-172-31-38-170 sudo: mongoadmin : 1 incorrect password attempt ; TTY=pts/0 ; PWD=/home/mongoadmin ; USER=root ; COMMAND=list
+2025-12-29T05:42:05.350687+00:00 ip-172-31-38-170 nologin: Attempted login by mongoadmin (UID: 1001) on UNKNOWN
+2025-12-29T05:45:01.070943+00:00 ip-172-31-38-170 CRON[70419]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:45:01.073845+00:00 ip-172-31-38-170 CRON[70419]: pam_unix(cron:session): session closed for user root
+2025-12-29T05:48:28.249844+00:00 ip-172-31-38-170 sshd[40027]: Received disconnect from 65.0.76.43 port 46062:11: disconnected by user
+2025-12-29T05:48:28.250045+00:00 ip-172-31-38-170 sshd[40027]: Disconnected from user mongoadmin 65.0.76.43 port 46062
+2025-12-29T05:48:28.250833+00:00 ip-172-31-38-170 sshd[39962]: pam_unix(sshd:session): session closed for user mongoadmin
+2025-12-29T05:48:28.254774+00:00 ip-172-31-38-170 systemd-logind[678]: Session 10 logged out. Waiting for processes to exit.
+2025-12-29T05:48:28.255594+00:00 ip-172-31-38-170 systemd-logind[678]: Removed session 10.
+2025-12-29T05:48:38.331751+00:00 ip-172-31-38-170 (sd-pam): pam_unix(systemd-user:session): session closed for user mongoadmin
+2025-12-29T05:55:01.079806+00:00 ip-172-31-38-170 CRON[70448]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T05:55:01.082938+00:00 ip-172-31-38-170 CRON[70448]: pam_unix(cron:session): session closed for user root
+2025-12-29T06:00:27.272580+00:00 ip-172-31-38-170 sshd[70457]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys root SHA256:4vycLsDMzI+hyb9OP3wd18zIpyTqJmRq/QIZaLNrg8A failed, status 22
+2025-12-29T06:00:31.171853+00:00 ip-172-31-38-170 sshd[70457]: Accepted keyboard-interactive/pam for root from 119.73.124.129 port 24837 ssh2
+2025-12-29T06:00:31.173351+00:00 ip-172-31-38-170 sshd[70457]: pam_unix(sshd:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T06:00:31.192830+00:00 ip-172-31-38-170 systemd-logind[678]: New session 14 of user root.
+2025-12-29T06:00:31.211633+00:00 ip-172-31-38-170 (systemd): pam_unix(systemd-user:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T06:05:01.088388+00:00 ip-172-31-38-170 CRON[70605]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2025-12-29T06:05:01.091791+00:00 ip-172-31-38-170 CRON[70605]: pam_unix(cron:session): session closed for user root
+2025-12-29T06:08:08.901453+00:00 ip-172-31-38-170 sshd[142235]: Connection closed by 172.236.228.218 port 37978 [preauth]
+2025-12-29T06:08:10.499280+00:00 ip-172-31-38-170 sshd[142237]: Connection closed by 172.236.228.218 port 37990 [preauth]
+2025-12-29T06:08:12.106961+00:00 ip-172-31-38-170 sshd[142240]: Connection closed by 172.236.228.218 port 38002 [preauth]
+2025-12-29T06:08:22.160332+00:00 ip-172-31-38-170 useradd[142957]: new user: name=lxd, UID=999, GID=105, home=/var/snap/lxd/common/lxd, shell=/bin/false, from=none
+2025-12-29T06:09:26.127209+00:00 ip-172-31-38-170 sshd[156244]: userauth_pubkey: signature algorithm ssh-rsa not in PubkeyAcceptedAlgorithms [preauth]
+2025-12-29T06:09:26.327299+00:00 ip-172-31-38-170 sshd[156244]: AuthorizedKeysCommand /usr/share/ec2-instance-connect/eic_run_authorized_keys root SHA256:HLFffrX3LVb06DggPMfDqC2qeKmSOY//wC+iS6wUlaM failed, status 22
+2025-12-29T06:09:35.589933+00:00 ip-172-31-38-170 sshd[156244]: Connection closed by authenticating user root 139.19.117.130 port 51608 [preauth]

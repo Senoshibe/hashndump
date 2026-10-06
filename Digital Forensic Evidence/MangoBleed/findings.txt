@@ -1,0 +1,36 @@
+1:2025-12-29T05:04:11.115806+00:00 ip-172-31-38-170 useradd[571]: new group: name=ubuntu, GID=1000
+2:2025-12-29T05:04:11.115810+00:00 ip-172-31-38-170 useradd[571]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+3:2025-12-29T05:04:11.115814+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'adm'
+4:2025-12-29T05:04:11.115818+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'cdrom'
+5:2025-12-29T05:04:11.115821+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'sudo'
+6:2025-12-29T05:04:11.115825+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'dip'
+7:2025-12-29T05:04:11.115829+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to group 'lxd'
+8:2025-12-29T05:04:11.115833+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'adm'
+9:2025-12-29T05:04:11.115836+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'cdrom'
+10:2025-12-29T05:04:11.115842+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'sudo'
+11:2025-12-29T05:04:11.115845+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'dip'
+12:2025-12-29T05:04:11.115849+00:00 ip-172-31-38-170 useradd[571]: add 'ubuntu' to shadow group 'lxd'
+28:2025-12-29T05:06:21.950910+00:00 ip-172-31-38-170 sshd[1046]: Invalid user a from 111.36.147.188 port 53504
+29:2025-12-29T05:06:22.236147+00:00 ip-172-31-38-170 sshd[1046]: Connection closed by invalid user a 111.36.147.188 port 53504 [preauth]
+34:2025-12-29T05:07:45.300046+00:00 ip-172-31-38-170 sudo:   ubuntu : TTY=pts/0 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/su
+38:2025-12-29T05:09:28.734550+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/gpg --dearmor -o /usr/share/keyrings/mongodb-server-8.0.gpg
+41:2025-12-29T05:09:30.166819+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/tee /etc/apt/sources.list.d/mongodb-org-8.0.list
+44:2025-12-29T05:09:30.178028+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt update
+47:2025-12-29T05:11:07.085777+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/apt install -y mongodb-org=8.0.16 mongodb-org-server=8.0.16 mongodb-org-shell=8.0.16 mongodb-org-mongos=8.0.16 mongodb-org-tools=8.0.16
+49:2025-12-29T05:11:32.546157+00:00 ip-172-31-38-170 useradd[1753]: new user: name=mongodb, UID=111, GID=65534, home=/nonexistent, shell=/usr/sbin/nologin, from=/dev/pts/3
+50:2025-12-29T05:11:32.638240+00:00 ip-172-31-38-170 groupadd[1764]: group added to /etc/group: name=mongodb, GID=113
+51:2025-12-29T05:11:32.643207+00:00 ip-172-31-38-170 groupadd[1764]: group added to /etc/gshadow: name=mongodb
+52:2025-12-29T05:11:32.644821+00:00 ip-172-31-38-170 groupadd[1764]: new group: name=mongodb, GID=113
+56:2025-12-29T05:11:47.075678+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl enable --now mongod
+59:2025-12-29T05:11:47.390413+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl status mongod --no-pager
+64:2025-12-29T05:16:57.992577+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl restart mongod
+67:2025-12-29T05:16:58.059130+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/root ; USER=root ; COMMAND=/usr/bin/systemctl status mongod --no-pager
+72:2025-12-29T05:17:25.046776+00:00 ip-172-31-38-170 groupadd[2082]: group added to /etc/group: name=mongoadmin, GID=1001
+73:2025-12-29T05:17:25.052150+00:00 ip-172-31-38-170 groupadd[2082]: group added to /etc/gshadow: name=mongoadmin
+74:2025-12-29T05:17:25.053874+00:00 ip-172-31-38-170 groupadd[2082]: new group: name=mongoadmin, GID=1001
+75:2025-12-29T05:17:25.077965+00:00 ip-172-31-38-170 useradd[2089]: new user: name=mongoadmin, UID=1001, GID=1001, home=/home/mongoadmin, shell=/bin/bash, from=/dev/pts/1
+82:2025-12-29T05:21:06.708154+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/sbin/sshd -t
+85:2025-12-29T05:21:06.729843+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+91:2025-12-29T05:21:06.787763+00:00 ip-172-31-38-170 sudo:     root : TTY=pts/1 ; PWD=/etc/ssh ; USER=root ; COMMAND=/usr/bin/systemctl status ssh --no-pager
+214:2025-12-29T05:42:04.018057+00:00 ip-172-31-38-170 sudo: mongoadmin : 1 incorrect password attempt ; TTY=pts/0 ; PWD=/home/mongoadmin ; USER=root ; COMMAND=list
+236:2025-12-29T06:08:22.160332+00:00 ip-172-31-38-170 useradd[142957]: new user: name=lxd, UID=999, GID=105, home=/var/snap/lxd/common/lxd, shell=/bin/false, from=none
