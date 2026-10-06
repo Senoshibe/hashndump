@@ -30,5 +30,9 @@
     shasum -a 256 ./auth.log ./wtmp > hashcheck.txt
 
     grep -inE 'Failed password|Invalid user|Accepted password|useradd|groupadd|COMMAND=' ./collected/auth.log > findings.txt
+    #grep key words in auth.logs and put it in text file for examination later.
 
-    
+    python3 ../../utmp.py -o collected/wtmp.out collected/wtmp
+    #parse wtmp binary file to be more human readable.
+
+    echo "Done. Read findings.txt and Search Suspicious IPv4 Address in collected/wtmp.out. Check hash for any tampering."
